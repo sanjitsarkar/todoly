@@ -24,7 +24,7 @@ function Home({ googleId }) {
         //   setLoading(true)
       console.log(priority + due);
     //   console.log(googleId);
-const response = await axios.post("http://localhost:5000/todos", {title,description,due,priority,userId:googleId}, { withCredentials: true })
+const response = await axios.post("https://todask.herokuapp.com/todos", {title,description,due,priority,userId:googleId}, { withCredentials: true })
 console.log(response.data);
           
           await fetchTodos()
@@ -36,7 +36,7 @@ console.log(response.data);
           {
         e.preventDefault()
         // await fetch(`http://localhost:5000/todos/${_id}`, { credentials: "include", method="PUT", body: JSON.stringify({title,description,due,priority,userId:googleId})})
-        await axios.put(`http://localhost:5000/todos/${_id}`, { title, description, due, priority, userId: googleId }, {withCredentials:true})
+        await axios.put(`https://todask.herokuapp.com/todos/${_id}`, { title, description, due, priority, userId: googleId }, {withCredentials:true})
         set_id("")
         setTitle("")
         setDescription("")
@@ -49,7 +49,7 @@ console.log(response.data);
 
     const fetchTodos = async () => {
         try {
-            let response = await fetch("http://localhost:5000/todos", {credentials:"include"})
+            let response = await fetch("https://todask.herokuapp.com/todos", {credentials:"include"})
             response = await response.json()
             // console.log("type",typeof response);
             if(response.error)

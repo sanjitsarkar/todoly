@@ -21,7 +21,7 @@ function App() {
     const logout = async () => {
       try {
       setLoading(true)
-      const logout = await fetch("http://localhost:5000/logout", {
+      const logout = await fetch("https://todask.herokuapp.com/logout", {
         credentials: 'include'
       })
       let result = await logout.json()
@@ -43,7 +43,7 @@ function App() {
   
   async function signInWithGoogle() {
      setLoading(true)
-    const url = "http://localhost:5000/login/google"
+    const url = "https://todask.herokuapp.com/login/google"
             const win =    window.open(url, "_blank", 'width=500,height=600,status=0,toolbar=0')
 
   
@@ -63,7 +63,7 @@ function App() {
   
   const fetchUser = async () => {
     try {
-      const user = await fetch("http://localhost:5000/user", {
+      const user = await fetch("https://todask.herokuapp.com/user", {
   credentials: 'include'
 })
       let result = await user.json()
