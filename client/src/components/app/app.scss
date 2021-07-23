@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.loader {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: rgb(33, 28, 53);
+}
+
+.todo-form {
+    position: fixed;
+    top: 1em;
+    left: auto;
+    &::before {
+        z-index: -1;
+        content: "/";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.123);
+    }
+}
+
+.floatingAddButton {
+    position: fixed;
+    z-index: 99;
+    bottom: 3em;
+    right: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 4rem;
+    text-align: center;
+    background: dodgerblue;
+    color: white;
+    box-shadow: 0px 0px 0.8em rgba(11, 10, 14, 0.418);
+}

@@ -1,0 +1,13 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1em;
+  background: dodgerblue;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
+  margin-top: 3rem;
+}
+/*# sourceMappingURL=footer.css.map */

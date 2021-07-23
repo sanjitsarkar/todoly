@@ -1,0 +1,23 @@
+.todos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1.error {
+  text-align: center;
+  margin: 10rem auto;
+  font-size: 2rem;
+}
+
+.home {
+  margin-top: 8rem;
+}
+/*# sourceMappingURL=home.css.map */

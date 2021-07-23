@@ -1,0 +1,17 @@
+.todos {
+  //   display: grid;
+  //   grid-template-columns: minmax(min-content, repeat(3, 1fr));
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  margin-top: 3em;
+  justify-content: center;
+}
+h1.error {
+  text-align: center;
+  margin: 10rem auto;
+  font-size: 2rem;
+}
+.home {
+  margin-top: 8rem;
+}

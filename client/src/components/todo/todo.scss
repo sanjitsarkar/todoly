@@ -1,0 +1,28 @@
+.card {
+  width: 90%;
+
+  * {
+    padding: 0.4rem 1.5rem;
+  }
+  * + * {
+    border-bottom: 1px dotted rgba(145, 142, 142, 0.425);
+  }
+  .due {
+    border: none;
+  }
+  box-shadow: 0 0.1rem 1em rgba(0, 0, 0, 0.37);
+  .title {
+    background: dodgerblue;
+    color: white;
+    i {
+      color: red;
+      fill: red;
+      width: 1em;
+    }
+    font-size: 1.3rem;
+    // padding: 1em 1.5em;
+  }
+  .description {
+    background: rgba(30, 143, 255, 0.13);
+  }
+}
